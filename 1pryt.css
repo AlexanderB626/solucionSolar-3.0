@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+header h1 {
+    font-family: 'Arial', sans-serif; 
+    text-align: center; 
+    font-size: 50px; 
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    
+}
+.menu{
+    list-style: none;
+    padding: 0px;
+    background: #092327;
+    width: 100%;
+    margin: auto;
+    position: right;
+    text-align: right;
+}
+.menu li a{
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: orange;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;    
+}
+.item{
+    border: 2px solid rgb(0, 75, 0);
+    padding: 10px;
+    margin: 0 10px;
+    
+    
+}
+.whatsapp {
+    /* Estilos para la ventana flotante */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 1000;
+}
+
+.whatsapp .contenido {
+    text-align: center;
+}
+
+.whatsapp img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#inicio {
+    position: relative; 
+    width: 1500px;
+    height: 550px;
+    overflow: hidden; 
+}
+
+#inicio::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imagen/cantidad-placas-solares.jpeg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.4; 
+    z-index: -1
+}
+
+#inicio h2,
+#inicio .opciones {
+    position: relative; 
+    z-index: 1; 
+    color: black; 
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.botones-container {
+    float: left;     
+    font-size: 40px;
+}
+
+.botones-container button {
+    display: block; 
+    margin-bottom: 25px; 
+    width: auto; 
+    font-size: 25px;
+}
+.ventana-flotante {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(238, 207, 5);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    padding: 10px;  
+    font-size: 20px;  
+}

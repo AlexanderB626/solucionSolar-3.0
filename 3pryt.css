@@ -1,0 +1,18 @@
+#dimensionar{
+  position: relative; 
+  width: 1500px;
+  height: 550px;
+  overflow: hidden; 
+  
+}
+
+.resultado {
+  border: 2px solid #ddd; 
+  border-radius: 10px; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+}
+
+.resultado.resaltado {
+  border-color: green; 
+}

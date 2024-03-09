@@ -1,0 +1,27 @@
+#energia{
+    position: relative; 
+    width: 1500px;
+    height: 550px;
+    overflow: hidden; 
+    
+}
+
+#energia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px; 
+    height: 800px; 
+    background-image: url(./imagen/Recibo.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    margin: 2px;
+}
+
+#parrafo1{
+    max-width: 800px; 
+    margin: 20px;
+}

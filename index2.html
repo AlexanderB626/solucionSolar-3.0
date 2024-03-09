@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro222</title>
+    <link rel="stylesheet" href="./1pryt.css">
+    <link rel="stylesheet" href="./2pryt.css">
+    <link rel="stylesheet" href="./3pryt.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+
+</head>
+<body>
+    <header>
+    <h1> SOLUCION SOLAR</h1>   
+    </header>
+    <section>
+        <ul class="menu">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#energia">ENERGIA</a></li>
+            <li><a href="#dimensionar">DIMENSIONAR</a></li>
+            <li><a href="#" id="whatsappLink">CONTACTO</a></li>
+        </ul>
+    </section>
+    
+    <div id="whatsapp" class="whatsapp">
+        <div class="contenido">
+            <img src="./imagen/Imagen de WhatsApp 2024-02-28 a las 13.28.45_c456d21f.jpg" alt="Foto de contacto">
+            <button id="cerrarVentana">Cerrar</button>
+        </div>
+    </div>
+
+    <main class="opciones">
+        <div class="item" id="inicio">
+            <h2>Transformando la luz del sol en energía limpia y sostenible para un futuro más brillante.</h2>
+            <div class="botones-container">
+            <button id="btnManual" type="button" class="btn btn-primary" onclick="abrirModal('manual')">Manual</button>
+            <button id="btnVentajas" type="button" class="btn btn-primary" onclick="abrirModal('ventajas')">Ventajas</button>
+            <button id="btnInformacion" type="button" class="btn btn-primary" onclick="abrirModal('informacion')">Información</button>
+            </div>
+            
+        </div>
+            
+        
+
+        <div class="item" id="energia">
+            <div class="content" id="parrafo1">
+                <h2>ENERGIA</h2>
+                <section>En esta sección analizaremos la energia necesaria que necesitaras, como veras en la foto de la derecha puedes ver el   monto en kilowatts hora al mes '(kwh)' encerrado en una casilla roja. 
+                    <br>Observaras de una casilla azul el costo de cuanto es tu costo de killowats por hora.
+                    <br>observaras con una flecha verde como ver tu mes con mayor consumo de killowats hora al mes, este sera el dato que tomaremos a consideración, y el que tendras que insertar en la casilla de abajo. 
+                </section>
+                <br>
+                <form id="dato">
+                    <label for="monto_energia">Monto de energía:</label><br>
+                    <input type="number" id="monto_energia" name="monto_energia" required> kWh<br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <div id="resultado"></div>
+                
+            </div>
+        </div>
+        
+        <div class="item" id="dimensionar">
+            <h2>Dimensionar</h2>
+            <div id="dimensionarResultado" class="row justify-content-between">
+                <div id="result_12V" class="resultado col-md-3" style="margin-right: 15px; margin-left: 15px;"></div>
+                <div id="result_24V" class="resultado col-md-3"></div>
+                <div id="result_48V" class="resultado col-md-3" style="margin-left: 15px; margin-right: 15px;"></div>
+            </div>
+        </div>
+        
+
+        
+    </main>
+    <script src="./1pryt.js"></script>
+    <script src="./2prty.js"></script>
+    <script src="./6pryt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
